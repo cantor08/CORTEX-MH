@@ -1,0 +1,89 @@
+{
+  "task": "Task 1 \u2014 Domain Gate / OOD Classifier",
+  "model": "DistilBERT (distilbert-base-uncased) fine-tuned binary classifier",
+  "in_domain_dataset": "ourafla/Mental-Health_Text-Classification_Dataset",
+  "ood_dataset": "google-research-datasets/go_emotions (hard negatives)",
+  "training": {
+    "epochs": 4,
+    "lr": 2e-05,
+    "batch_size": 32,
+    "max_length": 128,
+    "best_epoch": 4,
+    "best_val_f1": 0.9577682760110175
+  },
+  "data": {
+    "in_domain_raw": 49441,
+    "ood_raw": 49441,
+    "in_domain_clean": 45455,
+    "ood_clean": 42572,
+    "train": 61618,
+    "val": 13204,
+    "test": 13205,
+    "in_domain_rejected_by_rules": 3986,
+    "ood_rejected_by_rules": 6869
+  },
+  "sanitization_rejection_reasons": {
+    "in_domain": {
+      "too_short": 2489,
+      "non_english": 1444,
+      "symbol_only": 23,
+      "high_repetition": 26,
+      "url_only": 4
+    },
+    "ood": {
+      "non_english": 1059,
+      "too_short": 5462,
+      "url_only": 330,
+      "high_repetition": 8,
+      "symbol_only": 10
+    }
+  },
+  "threshold_config": {
+    "decision_threshold": 0.83,
+    "target_in_domain_recall": 0.95,
+    "val_recall_in_domain": 0.9554121443238487,
+    "val_precision_in_domain": 0.9658956109134045,
+    "val_f1_in_domain": 0.9606252765078896,
+    "val_false_reject_rate": 0.04458785567615137,
+    "val_false_accept_rate": 0.03601628562480426
+  },
+  "test_classification_report": {
+    "OOD": {
+      "precision": 0.9505827505827505,
+      "recall": 0.9578766050735985,
+      "f1-score": 0.9542157398018876,
+      "support": 6386.0
+    },
+    "In-Domain": {
+      "precision": 0.9602658788774003,
+      "recall": 0.9533655961284646,
+      "f1-score": 0.9568032967841636,
+      "support": 6819.0
+    },
+    "accuracy": 0.9555471412343809,
+    "macro avg": {
+      "precision": 0.9554243147300754,
+      "recall": 0.9556211006010316,
+      "f1-score": 0.9555095182930256,
+      "support": 13205.0
+    },
+    "weighted avg": {
+      "precision": 0.9555830725699688,
+      "recall": 0.9555471412343809,
+      "f1-score": 0.9555519420784602,
+      "support": 13205.0
+    }
+  },
+  "test_confusion_matrix": [
+    [
+      6117,
+      269
+    ],
+    [
+      318,
+      6501
+    ]
+  ],
+  "test_false_reject_rate": 0.04663440387153542,
+  "test_false_accept_rate": 0.042123394926401506
+}

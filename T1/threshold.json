@@ -1,0 +1,9 @@
+{
+  "decision_threshold": 0.83,
+  "target_in_domain_recall": 0.95,
+  "val_recall_in_domain": 0.9554121443238487,
+  "val_precision_in_domain": 0.9658956109134045,
+  "val_f1_in_domain": 0.9606252765078896,
+  "val_false_reject_rate": 0.04458785567615137,
+  "val_false_accept_rate": 0.03601628562480426
+}

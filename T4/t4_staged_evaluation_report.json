@@ -1,0 +1,51 @@
+{
+  "stage1_text_branch": {
+    "best_val_f1": 0.9967
+  },
+  "stage2_clinical_branch": {
+    "best_val_f1": 0.9657
+  },
+  "stage3_fusion": {
+    "best_val_f1": 0.9732,
+    "test_macro_f1": 0.9724,
+    "p0_recall": 0.9921,
+    "p1_recall": 0.9223,
+    "mean_alpha": 0.9436,
+    "alpha_by_class": {
+      "P0": 0.89,
+      "P1": 0.9682,
+      "P2": 0.9711,
+      "P3": 0.9455
+    }
+  },
+  "ablation": [
+    {
+      "Model": "Full Model",
+      "Macro-F1": 0.9724,
+      "P0 Recall": 0.9921,
+      "P1 Recall": 0.9223,
+      "\u0394F1 vs Full": 0.0
+    },
+    {
+      "Model": "No Text",
+      "Macro-F1": 0.9703,
+      "P0 Recall": 1.0,
+      "P1 Recall": 0.9037,
+      "\u0394F1 vs Full": -0.0021
+    },
+    {
+      "Model": "No Clinical",
+      "Macro-F1": 0.1733,
+      "P0 Recall": 0.0,
+      "P1 Recall": 0.0,
+      "\u0394F1 vs Full": -0.7991
+    },
+    {
+      "Model": "No Temporal",
+      "Macro-F1": 0.9712,
+      "P0 Recall": 0.9921,
+      "P1 Recall": 0.9189,
+      "\u0394F1 vs Full": -0.0012
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "rule_based": {
+    "invalid": "Empty or null input.",
+    "too_short": "Fewer than 5 words.",
+    "url_only": "Input is a URL with no accompanying text.",
+    "symbol_only": "Input contains only emoji / punctuation / symbols.",
+    "high_repetition": "Abnormally high character repetition ratio (>0.45).",
+    "non_english": "Detected as non-English by langdetect."
+  },
+  "model_based": {
+    "ood_classifier": "DistilBERT in-domain probability below decision threshold (0.83)."
+  }
+}

@@ -1,0 +1,5 @@
+Model,Macro-F1,P0 Recall,P1 Recall,ΔF1 vs Full
+Full Model,0.9724,0.9921,0.9223,0.0
+No Text,0.9703,1.0,0.9037,-0.0021
+No Clinical,0.1733,0.0,0.0,-0.7991
+No Temporal,0.9712,0.9921,0.9189,-0.0012
