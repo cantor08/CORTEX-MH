@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/Cortex_MH_logo_design_concept.png" alt="CORTEX-MH Logo" width="280"/>
+  <img src="Cortex MH logo design concept.png" alt="CORTEX-MH Logo" width="280"/>
 </p>
 
 <h1 align="center">CORTEX-MH</h1>
