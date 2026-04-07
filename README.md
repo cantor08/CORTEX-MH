@@ -349,35 +349,61 @@ Where `Spike_d` = z-score of P0/P1 rate vs trailing window (7 or 14 days)
 ```
 CORTEX-MH/
 │
-├── assets/
-│   └── Cortex_MH_logo_design_concept.png      # Project logo
+├── CORTEX-MH                              # Submodule
 │
-├── T2/                                         # Task 2 — Mental-State Classification
-│   ├── Task_1.ipynb
-│   ├── Task_1_output.ipynb
-│   ├── task2_models.zip
+├── T1/                                    # Task 1 — Domain Gate / OOD Classifier
+│   ├── t1_tokenizer/
+│   ├── T1.ipynb
+│   ├── CORTEX_MH_Task1_Report.docx
+│   ├── rejection_taxonomy.json
+│   ├── threshold.json
+│   ├── t1_evaluation_plots.png
+│   ├── t1_evaluation_report.json
+│   ├── t1_threshold_curve.csv
+│   └── t1_training_curve.png
+│
+├── T2/                                    # Task 2 — Mental-State Classification
+│   ├── .DS_Store
+│   ├── Task_2.ipynb
+│   ├── Task_2_output.ipynb
 │   ├── task2_results.zip
 │   └── task2_weak_modality_for_task4_named.csv
 │
-├── T3/                                         # Task 3 — Crisis Severity Scoring
-│   ├── t3_training.ipynb
-│   ├── task3_strong_modality_40k.csv
+├── T3/                                    # Task 3 — Crisis Severity Scoring
 │   ├── Dataset/
+│   │   ├── imputer_dataset.ipynb
 │   │   ├── task_3_dataset_generation.ipynb
 │   │   └── task3_synthetic_cssrs_structured.csv
-│   └── models/
-│       ├── task3_score_regressor.pkl
-│       └── task3_feature_cols.pkl
+│   ├── models/
+│   │   └── task3_feature_cols.pkl
+│   ├── t3_training.ipynb
+│   ├── task3_strong_modality_40k.csv
+│   └── task3_strong_modality_40k.csv.gz
 │
-├── T4/                                         # Task 4 — Fusion Triage
-│   ├── T4.ipynb
-│   ├── t4_gated_fusion.pt
-│   ├── t4_test_predictions.csv
-│   ├── t4_evaluation_report.json
-│   └── *.png
+├── T4/                                    # Task 4 — Fusion Triage
+│   ├── .DS_Store
+│   ├── T4-20260330T224224Z-3-001.zip
+│   ├── T4.docx
+│   ├── T4_Final.ipynb
+│   ├── clinical_branch_pretrained.pt
+│   ├── t4_gated_fusion_staged.pt
+│   ├── t4_staged_ablation.png
+│   ├── t4_staged_ablation_results.csv
+│   ├── t4_staged_confusion_matrix.png
+│   ├── t4_staged_evaluation_report.json
+│   ├── t4_staged_gate_weights.png
+│   ├── t4_staged_test_predictions.csv
+│   ├── t4_staged_training_curves.png
+│   └── text_branch_pretrained.pt
 │
-├── zenodo_500_with_triage_predictions_20260301_195222.csv
-└── README.md
+├── T5/                                    # Task 5 — Population Analytics
+│   ├── .DS_Store
+│   └── Task 5.docx
+│
+├── .gitignore
+├── Cortex MH logo design concept.png
+├── README.md
+└── index.html
 ```
 
 ---
